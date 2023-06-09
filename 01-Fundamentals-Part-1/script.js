@@ -1,7 +1,7 @@
-let js = 'amazing';
+let country  = "Thailand";
+let continent = "Asia";
+let population = "71.75";
 
-if (js === 'amazing') {
-  alert('JavaScript is FUN!');
-}
-
-console.log(40 + 8 + 23 - 10);
+console.log("Country: " + country);
+console.log("Continent: " + continent);
+console.log("Population (in millions) : " + population);
