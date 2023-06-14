@@ -40,9 +40,14 @@ let description = country + ' is in ' + continent + ', and its ' + population + 
 console.log(description);
 */
 
+// 05. Strings and Template Literals
+description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description);
+
 
 // *****CODING CHALLENGE*****
 // #1
+/*
 let massMark;
 let massJohn;
 let heightMark;
@@ -54,10 +59,10 @@ heightMark = 1.69;
 massJohn = 92;
 heightJohn = 1.95;
 // **DATA 2**
-/* massMark = 95;
-heightMark = 1.88;
-massJohn = 85;
-heightJohn = 1.76; */
+// massMark = 95;
+// heightMark = 1.88;
+// massJohn = 85;
+// heightJohn = 1.76;
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / heightJohn ** 2;
 console.log("BMI of Mark is " + BMIMark);
@@ -65,3 +70,4 @@ console.log("BMI of John is " + BMIJohn);
 // ***BONUS***
 let markHigherBMI = (BMIMark > BMIJohn);
 console.log("BMI of Mark is higher than BMI of John is " + markHigherBMI);
+*/
