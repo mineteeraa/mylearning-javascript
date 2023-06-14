@@ -22,4 +22,15 @@ console.log("Type of language: " + typeof language);
 
 // 03. let, const and var
 language = "Thai";
+/*
 console.log("Language: " + language);
+*/
+
+// 04. Basic Operators
+console.log("Thailand has a population in half of " + population / 2 + " million");
+population++
+console.log(population);
+console.log(population > 6);
+console.log(population < 33);
+let description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+console.log(description);
