@@ -48,16 +48,17 @@ console.log(description);
 
 // 06. Taking Decisions: if / else Statements
 // population = 13;
+/*
 if (population > 33) {
     console.log(`${country}'s population is above average`);
 } else {
     console.log(`${country}'s population is ${33 - population} million below average`);
 }
+*/
 
 
 // *****CODING CHALLENGE*****
 // #1
-/*
 let massMark;
 let massJohn;
 let heightMark;
@@ -75,9 +76,19 @@ heightJohn = 1.95;
 // heightJohn = 1.76;
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / heightJohn ** 2;
+/*
 console.log("BMI of Mark is " + BMIMark);
 console.log("BMI of John is " + BMIJohn);
+*/
 // ***BONUS***
+/*
 let markHigherBMI = (BMIMark > BMIJohn);
 console.log("BMI of Mark is higher than BMI of John is " + markHigherBMI);
 */
+
+// #2
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+} else {
+    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+}
