@@ -80,11 +80,13 @@ if (numNeighbours === 1) {
 */
 
 // 09. Logical Operators
+/*
 if (language === "English" && population < 50 && isIsland) {
     console.log(`You should live in ${country} :)`);
 } else {
     console.log(`${country} does not meet your criteria :(`);
 }
+*/
 
 
 // *****CODING CHALLENGE*****
@@ -124,3 +126,5 @@ if (BMIMark > BMIJohn) {
     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
 */
+
+// #3
