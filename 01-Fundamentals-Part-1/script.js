@@ -88,6 +88,29 @@ if (language === "English" && population < 50 && isIsland) {
 }
 */
 
+// 10. The switch Statement
+switch (language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D');
+        break;
+}
+
 
 // *****CODING CHALLENGE*****
 // #1
@@ -128,3 +151,38 @@ if (BMIMark > BMIJohn) {
 */
 
 // #3
+// ***TEST DATA***
+// **DATA 1**
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+/*
+console.log(scoreDolphins, scoreKoalas);
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy");
+} else if (scoreDolphins < scoreKoalas) {
+    console.log("Koalas win the trophy");
+} else if (scoreDolphins === scoreKoalas) {
+    console.log("Both win the trophy");
+}
+*/
+/*
+// ***BONUS***
+// **DATA 1**
+const scoreDolphins = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 123) / 3;
+// **DATA 2**
+// const scoreDolphins = (97 + 112 + 101) / 3;
+// const scoreKoalas = (109 + 95 + 106) / 3;
+console.log(scoreDolphins, scoreKoalas);
+if (scoreDolphins >= 100 || scoreKoalas >= 100) {
+    if (scoreDolphins > scoreKoalas) {
+        console.log("Dolphins win the trophy");
+    } else if (scoreDolphins < scoreKoalas) {
+        console.log("Koalas win the trophy");
+    } else if (scoreDolphins === scoreKoalas) {
+        console.log("Both win the trophy");
+    }
+} else {
+    console.log("No team wins the trophy");
+}
+*/
