@@ -113,7 +113,9 @@ switch (language) {
 */
 
 // 11. The Conditional (Ternary) Operator
+/*
 console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`);
+*/
 
 
 // *****CODING CHALLENGE*****
@@ -190,3 +192,8 @@ if (scoreDolphins >= 100 || scoreKoalas >= 100) {
     console.log("No team wins the trophy");
 }
 */
+
+// #4
+const bill = Number(prompt("Please enter the bill")); // bill values: 275, 40, 430
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
