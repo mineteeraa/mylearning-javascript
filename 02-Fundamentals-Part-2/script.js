@@ -47,6 +47,11 @@ describePopulation("China", 1441);
 describePopulation("Thailand", 71.75);
 describePopulation("Japan", 125.33);
 
+// 05. Introduction to Arrays
+const populations = [1441, 71.75, 125.33, 51.39];
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+console.log(populations.length === 4, percentages);
+
 
 // *****CODING CHALLENGE*****
 // #1
@@ -64,6 +69,7 @@ function checkWinner(avgDolhins, avgKoalas) {
         console.log("No team wins...");
     }
 }
+/*
 // ***TEST DATA***
 // **DATA 1**
 scoreDolphins = calcAverage(44, 23, 71);
@@ -73,3 +79,4 @@ checkWinner(scoreDolphins, scoreKoalas)
 scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 checkWinner(scoreDolphins, scoreKoalas)
+*/
