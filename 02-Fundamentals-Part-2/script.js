@@ -41,8 +41,35 @@ const percentageJapan3 = percentageOfWorld3(125.33);
 function describePopulation(country, population) {
     const percentage = percentageOfWorld1(population);
     const description = `${country} has ${population} million people, which is about ${percentage}% of the world.`;
-    console.log(description);
+    /* console.log(description); */
 }
 describePopulation("China", 1441);
 describePopulation("Thailand", 71.75);
 describePopulation("Japan", 125.33);
+
+
+// *****CODING CHALLENGE*****
+// #1
+let scoreDolphins;
+let scoreKoalas;
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+function checkWinner(avgDolhins, avgKoalas) {
+    if (avgDolhins >= 2 * avgKoalas) {
+        console.log(`Dolphins win! (${avgDolhins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolhins) {
+        console.log(`Koalas win! (${avgKoalas} vs. ${avgDolhins})`);
+    } else {
+        console.log("No team wins...");
+    }
+}
+// ***TEST DATA***
+// **DATA 1**
+scoreDolphins = calcAverage(44, 23, 71);
+scoreKoalas = calcAverage(65, 54, 49);
+checkWinner(scoreDolphins, scoreKoalas)
+// **DATA 2**
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+checkWinner(scoreDolphins, scoreKoalas)
