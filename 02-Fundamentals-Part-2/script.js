@@ -50,7 +50,23 @@ describePopulation("Japan", 125.33);
 // 05. Introduction to Arrays
 const populations = [1441, 71.75, 125.33, 51.39];
 const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
-console.log(populations.length === 4, percentages);
+/* console.log(populations.length === 4, percentages); */
+
+// 06. Basic Array Operations (Methods)
+const neighbours = ["Singapore", "Malaysia", "Laos"];
+
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+    console.log("Probably not a central European country :D");
+}
+
+neighbours[neighbours.indexOf("Singapore")] = "Republic of Singapore";
+console.log(neighbours);
 
 
 // *****CODING CHALLENGE*****
