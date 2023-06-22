@@ -79,13 +79,31 @@ const myCountry = {
 /* console.log(myCountry); */
 
 // 08. Dot vs. Bracket Notation
-console.log(`'${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+/* console.log(`'${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`); */
 // Dot Notation
 myCountry.population += 2;
-console.log(myCountry.population);
+/* console.log(myCountry.population); */
 // Bracket Notation
 myCountry['population'] -= 2;
-console.log(myCountry['population']);
+/* console.log(myCountry['population']); */
+
+// 09. Object Methods
+const myCountry2 = {
+    country: "Thailand",
+    capital: "Bangkok",
+    language: "Thai",
+    population: 71.75,
+    neighbours: neighbours,
+
+    describe: function () {
+        console.log(`'${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+    },
+    checkIsland: function () {
+        return this.isIsland = this.neighbours.length === 0 ? true : false;
+    }
+}
+myCountry2.describe();
+console.log(myCountry2.checkIsland());
 
 
 // *****CODING CHALLENGE*****
