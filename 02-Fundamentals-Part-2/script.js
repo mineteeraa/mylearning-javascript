@@ -105,6 +105,11 @@ const myCountry2 = {
 /* myCountry2.describe();
 console.log(myCountry2.checkIsland()); */
 
+// 10. Iteration: The for Loop
+for (let i = 1; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+}
+
 
 // *****CODING CHALLENGE*****
 // #1
@@ -174,7 +179,7 @@ const john = {
     }
 };
 if (mark.calcBMI() > john.calcBMI()) {
-    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
+    // console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
 } else if (mark.calcBMI() < john.calcBMI()) {
-    console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
+    // console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
 }
