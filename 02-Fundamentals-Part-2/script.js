@@ -68,6 +68,16 @@ if (!neighbours.includes("Germany")) {
 neighbours[neighbours.indexOf("Singapore")] = "Republic of Singapore";
 /* console.log(neighbours); */
 
+// 07. Introduction to Objects
+const myCountry = {
+    country: "Thailand",
+    capital: "Bangkok",
+    language: "Thai",
+    population: 71.75,
+    neighbours: neighbours
+}
+console.log(myCountry);
+
 
 // *****CODING CHALLENGE*****
 // #1
@@ -110,7 +120,7 @@ function calcTip(bill) {
 // **DATA 1**
 const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(bills, tips);
+/* console.log(bills, tips); */
 // ***BONUS***
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(total);
+/* console.log(total); */
