@@ -76,7 +76,16 @@ const myCountry = {
     population: 71.75,
     neighbours: neighbours
 }
-console.log(myCountry);
+/* console.log(myCountry); */
+
+// 08. Dot vs. Bracket Notation
+console.log(`'${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+// Dot Notation
+myCountry.population += 2;
+console.log(myCountry.population);
+// Bracket Notation
+myCountry['population'] -= 2;
+console.log(myCountry['population']);
 
 
 // *****CODING CHALLENGE*****
