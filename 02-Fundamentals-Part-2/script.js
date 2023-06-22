@@ -107,8 +107,16 @@ console.log(myCountry2.checkIsland()); */
 
 // 10. Iteration: The for Loop
 for (let i = 1; i <= 50; i++) {
-    console.log(`Voter number ${i} is currently voting`);
+    /* console.log(`Voter number ${i} is currently voting`); */
 }
+
+// 11. Looping Arrays, Breaking and Continuing
+const percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+    const percentage = percentageOfWorld1(populations[i]);
+    percentages2.push(percentage);
+}
+console.log(percentages2);
 
 
 // *****CODING CHALLENGE*****
