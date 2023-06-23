@@ -122,9 +122,19 @@ for (let i = 0; i < populations.length; i++) {
 const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
 for (let i = 0; i < listOfNeighbours.length; i++) {
     for (let j = 0; j < listOfNeighbours[i].length; j++) {
-        console.log("Neighbour: " + listOfNeighbours[i][j]);
+        /* console.log("Neighbour: " + listOfNeighbours[i][j]); */
     }
 }
+
+// 13. The while Loop
+const percentages3 = [];
+let count = 0;
+while (count < populations.length) {
+    const percentage = percentageOfWorld1(populations[count]);
+    percentages3.push(percentage);
+    count++;
+}
+console.log(percentages3);
 
 
 // *****CODING CHALLENGE*****
