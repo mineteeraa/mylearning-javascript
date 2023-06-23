@@ -134,7 +134,7 @@ while (count < populations.length) {
     percentages3.push(percentage);
     count++;
 }
-console.log(percentages3);
+/* console.log(percentages3); */
 
 
 // *****CODING CHALLENGE*****
@@ -180,8 +180,8 @@ const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 /* console.log(bills, tips); */
 // ***BONUS***
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-/* console.log(total); */
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+/* console.log(totals); */
 
 // #3
 const mark = {
@@ -209,3 +209,23 @@ if (mark.calcBMI() > john.calcBMI()) {
 } else if (mark.calcBMI() < john.calcBMI()) {
     // console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
 }
+
+// #4
+const bills2 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips2 = [];
+const totals2 = [];
+
+for (let i = 0; i < bills2.length; i++) {
+    tips2.push(calcTip(bills2[i]));
+    totals2.push(bills2[i] + tips2[i]);
+    console.log(`Iteration ${i} | bills: ` + bills2[i], ", tips: " + tips2[i], ", totals: " + totals2[i]);
+}
+// ***BONUS***
+function calcAverage2(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log("Average of Totals: " + calcAverage2(totals2));
